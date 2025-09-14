@@ -89,3 +89,7 @@ def waitlist_generator():
 
 if __name__ == "__main__":
     waitlist_generator()
+
+#Design Memo
+#This program uses a simple waitlist manager using a custom linked list structure. The linked list is made up of nodes, where each node represents a customer on the waitlist. Every node stores two pieces of information: the customer’s name and a pointer to the next node in the sequence. The LinkedList class is responsible for managing these nodes, giving methods to add customers to the front, add customers to the end, remove customers by name, and print the entire waitlist.
+#The head plays a critical role in the linked list. It always points to the first node in the sequence, effectively serving as the entry point to the whole waitlist. Any operation, whether it is printing the list, adding a new customer at the front, or removing a customer, must begin from the head. If the head is changed, such as when a new customer is added at the front or when the first customer is removed, the rest of the list remains intact because the head simply shifts to the correct node.
